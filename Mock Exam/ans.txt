@@ -1,0 +1,145 @@
+1
+F(N) = sqrt(N) and g(N) = sqrt(N) + 2 log N
+
+2
+F(N) = N and g(N) = N / logN
+
+3
+~log2N
+
+4
+O(N^2)
+
+5
+Linear in N
+
+6
+T(N) = 2 T(N-1) + 4
+
+7
+Linear in N or even faster
+
+8
+Set
+
+9
+true
+false
+true
+
+10
+L = [3,8,4]
+N = 3
+
+11
+O(N)
+
+12
+O(1)
+
+13
+O(1)
+
+14
+O(K)
+
+15
+public class M {
+    int [] L = { 0 };
+    int N = 0;
+
+    void insert(int item) {
+        if(contains(item)) return;
+        if( L.length == N )
+            resize(2*N);
+        assert( N < L.length ); 
+        L[N] = item;
+        N += 1;
+    }
+
+    void resize(int newN) {
+        int[] tmp = new int[newN];
+        for(int i=0;i<N;i++)
+                tmp[i] = L[i];
+        L=tmp;
+    }
+
+    boolean contains(int item) {
+        for(int i=0;i<N;i++)
+            if( item == L[i] )
+                return true;
+        return false;
+    }
+}
+
+16
+int reportmin (){
+  int min = Integer.MAX_VALUE;
+  for(int i = 0; i < N; i++)
+    if (L[i] < min)
+      min = L[i];
+  return min;
+}
+
+17
+19
+
+18
+Insertion sort
+
+19
+4-5
+
+20
+1
+
+21
+Selection sort
+
+22
+    M
+   / \
+  E   X
+ /
+A
+
+23
+    S
+   / \
+  E   M
+ /
+A
+
+24
+st
+0 --> [X,7] -> null
+1 --> [A,8] -> [I,3] -> [E,6] -> [M,9] -> null
+2 --> null
+3 --> [O,5] -> [C,4] -> null
+
+
+25
+  1
+ /|\
+0 2 4
+    |
+    3
+
+26
+Three nested loops of indices i, j, and k, to find 0\leq i<j<k<N such that A[i] = A[j] = A[k].
+
+27
+Simplest implementation is having 3 embedded loops with iterator variables i, j, k.
+'i' runs from 0 to n-2,
+'j' runs from i+1 to n-1 and
+'k' runs from j+1 to n
+Counting every time a[i] >= a[j] * 2 and a[j] >= a[k] * 2
+
+28
+O(K^3)
+
+29
+5583147
+
+30
+??
