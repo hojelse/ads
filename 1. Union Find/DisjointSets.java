@@ -5,10 +5,6 @@ public class DisjointSets {
   public static int[] parentOf;
 
   public static void main(String[] args) {
-    logic();
-  }
-
-  public static void logic(){
     Scanner sc = new Scanner(System.in);
 
     int n = sc.nextInt();
@@ -27,18 +23,14 @@ public class DisjointSets {
 
       switch (c) {
         case 0:
-          if(query(s,t)) System.out.println(1);
-          if(!query(s,t)) System.out.println(0);
+          System.out.println(query(s, t) ? 1 : 0);
           break;
-
         case 1:
           union(s,t);
           break;
-      
         case 2:
           move(s,t);
           break;
-
         default:
           break;
       }
@@ -46,42 +38,29 @@ public class DisjointSets {
     sc.close();
   }
 
+  // Does p and q have same root
   public static boolean query(int p, int q){
     return find(p) == find(q);
   }
 
+  // Connect two disjoint trees by setting the parent of one root to the other 
   public static void union(int p, int q){
     if (!query(p,q)) {
       parentOf[find(p)] = find(q);
     }
   }
 
+  // Move s from the set containing s into the set containing t
   public static void move(int s, int t){
-    // if(query(p,q)) return;
-    // if(p == find(p)){ // p is root
-    //   int firstchild = -1;
-    //   for (int i = 0; i < parentOf.length; i++) {
-    //     if(parentOf[i] == p) { // child of p
-    //       if(firstchild == -1) firstchild = i;
-    //       parentOf[i] = firstchild;
-    //     }
-    //   }
-    // } else {
-    //   for (int i = 0; i < parentOf.length; i++) {
-    //     if(parentOf[i] == p) { // child of p
-    //       parentOf[i] = parentOf[p];
-    //     };
-    //   }
-    // }
-    // parentOf[p] = find(q);
-
-
     int S = find(s);
     int T = find(t);
 
-    if(S != T){
+    if(S == T){
+      // s and t is already in the same set
+    } else {
       int R = -1;
-      if(S == s){
+      if(S == s){ // s is root
+        
         for (int i = 0; i < parentOf.length; i++) {
           if(parentOf[i] == s && i != s && R == -1){
             R = i;
