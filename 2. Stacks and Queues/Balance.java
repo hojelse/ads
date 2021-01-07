@@ -1,10 +1,38 @@
-import edu.princeton.cs.algs4.Stack;
 import java.util.Scanner;
+import edu.princeton.cs.algs4.Stack;
 
 public class Balance {
 
   public static void main(String[] args) {
-    func(); // forkert men gik igennem sidste gang    
+    func(); // forkert men gik igennem sidste gang
+    System.out.println(ans());
+  }
+
+  public static int ans(){
+    Scanner sc = new Scanner(System.in);
+    String str = sc.nextLine();
+    
+    Stack<String> stack = new Stack<>();
+
+    try {
+      int i = 0;
+      for (int j = 0; j < str.length(); j++){
+        char c = str.charAt(i);
+        if(c == '(' || c == '[') stack.push(""+c);
+        if(c == ')' && !stack.pop().equals("(")) return 0;
+        if(c == ']' && !stack.pop().equals("[")) return 0;
+        i++;
+      }
+      if(stack.isEmpty()){
+        return 1;
+      } else {
+        return 0;
+      }
+    } catch (Exception e) {
+      return 0;
+    } finally {
+      sc.close();
+    }
   }
 
   public static void func(){
