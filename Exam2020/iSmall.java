@@ -1,4 +1,4 @@
-package i;
+package Exam2020;
 
 import java.util.Scanner;
 
