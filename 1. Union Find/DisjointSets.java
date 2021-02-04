@@ -52,30 +52,34 @@ public class DisjointSets {
 
   // Move s from the set containing s into the set containing t
   public static void move(int s, int t){
-    int S = find(s);
-    int T = find(t);
+    int rootS = find(s); // Root of s
+    int rootT = find(t); // Root of t
 
-    if(S == T){
-      // s and t is already in the same set
-    } else {
-      int R = -1;
-      if(S == s){ // s is root
-        
-        for (int i = 0; i < parentOf.length; i++) {
-          if(parentOf[i] == s && i != s && R == -1){
-            R = i;
-            parentOf[i] = R;
+    if(rootS == rootT) return; // already in same set
+
+    if(s == rootS) { // s is root
+      // Find a new root of s
+      int newS = -1;
+      for (int i = 0; i < parentOf.length; i++) {
+        if(parentOf[i] == s && s != i) {
+          if (newS == -1) {
+            // Found new root (first child of s)
+            newS = i;
+            parentOf[newS] = newS;
+          } else {
+            // Update others
+            parentOf[i] = newS;
           }
-          if(parentOf[i] == s && i != s) parentOf[i] = R;
-        }
-      } else {
-        R = S;
-        for (int i = 0; i < parentOf.length; i++) {
-          if(parentOf[i] == s && i != s) parentOf[i] = R;
         }
       }
-      parentOf[s] = T;
+    } else {
+      // New parents every child of s
+      for (int i = 0; i < parentOf.length; i++) {
+        if (parentOf[i] == s) parentOf[i] = rootS;
+      }
     }
+
+    parentOf[s] = rootT;
   }
 
   public static int find(int x){
