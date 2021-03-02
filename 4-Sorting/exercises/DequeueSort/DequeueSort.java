@@ -66,12 +66,12 @@ public class DequeueSort {
       exchanged = false;
       String firstItemEnqueued = null;
 
-      while (firstItemEnqueued == null || !firstItemEnqueued.equals(deck.peekSecond())) {
-        if (rank.get(deck.peekTop()) > rank.get(deck.peekSecond())) {
+      while (firstItemEnqueued == null || !firstItemEnqueued.equals(second)) {
+        if (rank.get(top) > rank.get(second)) {
           deck.exchange();
           exchanged = true;
         }
-        if (firstItemEnqueued == null) firstItemEnqueued = deck.peekTop();
+        if (firstItemEnqueued == null) firstItemEnqueued = top;
         deck.rotate();
       }
       deck.rotate();
