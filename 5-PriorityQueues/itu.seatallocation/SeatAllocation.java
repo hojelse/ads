@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 import edu.princeton.cs.algs4.MaxPQ;
 
 public class SeatAllocation {
