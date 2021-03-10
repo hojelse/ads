@@ -56,17 +56,11 @@ public class BinarySearchSTTrace<Key extends Comparable<Key>, Value> {
     );
   }
 
-  public static String padRight(Integer s, int n) {
-    return String.format("%-" + n + "s", s.toString());  
+  public static String padRight(Object o, int n) {
+    return String.format("%-" + n + "s", o.toString());  
   }
-  public static String padRight(Character s, int n) {
-    return String.format("%-" + n + "s", s.toString());  
-  }
-  public static String padRight(String s, int n) {
-    return String.format("%-" + n + "s", s);  
-  }
-  public static String padLeft(String s, int n) {
-    return String.format("%" + n + "s", s);  
+  public static String padLeft(Object o, int n) {
+    return String.format("%" + n + "s", o.toString());  
   }
 
   /*

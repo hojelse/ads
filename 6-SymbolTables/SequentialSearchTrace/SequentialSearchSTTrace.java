@@ -25,7 +25,7 @@ public class SequentialSearchSTTrace<Key, Value> {
 
     System.out.println("Total: compares="+comparesTotal+" allCompares="+allComparesTotal);
   }
-
+  
   private void printState() {
     String nodes = "";
     for (Node x = first; x != null; x = x.next) {
