@@ -1,0 +1,73 @@
+\documentclass[a4paper,11pt]{article}
+
+% Import packages
+\usepackage{tikz} % https://mirrors.dotsrc.org/ctan/graphics/pgf/base/doc/pgfmanual.pdf
+
+\title{Tikz drawings}
+\author{Author: Kristoffer Højelse} 
+\date{\today}
+
+\begin{document} 
+
+\begin{center}
+\begin{tikzpicture}[xscale=0.6,yscale = 1]
+    \node (a) at (0,5) {$a$};
+    \node (b) at (-1,4) {$b$};
+    \node (c) at (-4,1) {$c$};
+    \node (d) at (-3,2) {$d$};
+    \node (e) at (1,4) {$e$};
+    \node (g) at (-2,3) {$g$};
+    \node (h) at (0,3) {$h$};
+    \draw (a) -- (b) -- (g) -- (d) -- (c);
+    \draw (a) -- (e);
+    \draw (b) -- (h);
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[xscale=0.6,yscale = 1, nodes={circle, draw}]
+    \node (a) at (0,0) {$a$};
+        \node (b) at (-2,-1) {$b$};
+        \node (c) at (2,-1) {$c$};
+            \node (d) at (-3,-2) {$d$};
+            \node (e) at (-1,-2) {$e$};
+            \node (f) at (1,-2) {$f$};
+    \draw (a) -- (b);
+    \draw (a) -- (c);
+    \draw (b) -- (d);
+    \draw (b) -- (e);
+    \draw (c) -- (f);
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[]
+    \matrix [nodes={draw}] {
+        \node(a) {$a$}; \\
+        \node(b) {$b$}; \\
+        \node(c) {$c$}; \\
+        \node(d) {$d$}; \\
+        \node(e) {$e$}; \\
+    };
+    
+    \node(f) at (2,0) {$f$};
+\end{tikzpicture}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
