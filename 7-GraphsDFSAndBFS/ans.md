@@ -82,14 +82,14 @@ o----o   o----o
 Directed Asyclic Graphs
 
 ```
-V=2 (6)
+V=2 (2)
 
 o  o
 
 o->o
 ```
 ```
-V=3 (31)
+V=3 (6)
 
 o   o   o
 
@@ -103,6 +103,8 @@ v   v   v   v     /   \
 o   o   o-->o    o---->o
 ```
 ```
+V=4 (31)
+
 o   o   o   o
 
 o-->o   o   o
