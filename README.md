@@ -1,5 +1,4 @@
 # Algorithms and Data Structures
-Algorithms and Data Structures (Spring 2020)
 
 1. Union-Find
 2. Stacks and Queues
