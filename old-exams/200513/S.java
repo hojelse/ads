@@ -1,5 +1,3 @@
-package Exam2020;
-
 public class S {
   int[] a = new int[1];
   int n = 0;

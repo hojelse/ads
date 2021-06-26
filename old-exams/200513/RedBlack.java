@@ -1,5 +1,3 @@
-package Exam2020;
-
 import edu.princeton.cs.algs4.RedBlackBST;
 
 public class RedBlack {
