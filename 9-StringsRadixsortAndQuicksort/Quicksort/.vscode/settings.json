@@ -1,6 +1,0 @@
-{
-  "java.project.referencedLibraries": [
-    "lib/**/*.jar",
-    "c:\\Users\\Gecko\\GitHub\\ads\\lib\\algs4.jar"
-  ]
-}
