@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IslandInfection {
+public class IslandInfection_1D {
   static int R;
   static int C;
   static int Vx;

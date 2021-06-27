@@ -1,10 +1,8 @@
-package Exam2020;
-
 import java.util.Scanner;
 
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
-public class iBig {
+public class IslandInfection_2D {
   static int R;
   static int C;
   static int Vx;
