@@ -31,10 +31,10 @@ Formally: We say that `f(N) = O(g(N))` if there exist constants `c` and `N0` suc
 1. Identify the largest term of both functions, and ignore the other terms.
 2. Find tilde approximation of both functions.
     - Heuristic: Ignore terms and constants which are insignificant when `N` goes towards infinity.
-    - Formally: `f(N) ~ g(N)` is true when the limit of `f(N)/g(N)` of `N`as `N` approaches `∞` is `1`.
+    - Formally: `f(N) ~ g(N)` is true when the limit of `f(N)/g(N)` of `N` as `N` approaches `∞` is `1`.
     - For instance: `(N+1)^2` is `~N^2`, since the constant `1` becomes insignificant, and the functions `(N+1)^2` and `N^2` converges, when `N` goes toward infinity.
 3. Find the smallest correct Big O estimate of both functions.
-    - Heuristic: Strip away all constant factors.
+    - Heuristic: Ignore all constant factors.
     - Formally: We say that `f(N) = O(g(N))` if there exist constants `c` and `N0` such that `|f(N)| < c * g(N)` for all `N > N0`.
     - For instance: `5N^4` is `O(N^4)` and `(1/5) * N^4` is `O(N^4)`
 4. Recall the different order-of-growth's and grow-rate ranking
