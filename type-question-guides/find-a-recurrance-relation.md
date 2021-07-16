@@ -56,6 +56,11 @@ A(5) = A(5 - 1)             + 3
      = A(1 - 1) + 3 + 3 + 3 + 3
      = A(0)     + 3 + 3 + 3 + 3
      = 0        + 3 + 3 + 3 + 3
+     = 12
+
+A(5) = 12
 ```
 
 *Note, in the last step `A(0)` is evaluated as 0, since the assignment specifies that the base case is `A(0) = 0`*
+
+`A(5) = 12`. Therefore when executing `c(5)` will trigger a total of 12 arithmetic operations.
