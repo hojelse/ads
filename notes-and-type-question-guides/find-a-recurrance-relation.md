@@ -1,4 +1,4 @@
-# Recurrance relation (Work in progress)
+# Recurrance relation
 
 ## Sample question
 
