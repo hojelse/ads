@@ -253,7 +253,7 @@ What is the running time of `mymethod`?
 
 ## Part 2 (Q7 - Q15): Mystery class
 
-This question is about the data structure defined by the following code snippets:
+This part is about the data structure defined by the following code snippets:
 
 ```python
 # python
