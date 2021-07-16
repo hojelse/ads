@@ -86,7 +86,7 @@ algs4-sample-project/
 
 After installing, now you should get IntelliSense (code suggestions) within VS Code and you can use the UI or `F5 key` (default keybinding) to run your java program.
 
-**If you get no IntelliSense**
+**If you get no IntelliSense/Autocomplete**
 
 Try this in VS Code, press `ctrl+shift+p` and select the command `Java: Clean Java Language Server Workspace`.
 
