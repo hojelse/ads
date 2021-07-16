@@ -1,13 +1,9 @@
-# Amortized analysis - notes
+# Amortized analysis
 
-Amortised time.
-Discribing an average time for a single operation,
-from a sequence of operations,
-where the sequence is chosen to maximize time.
+Amoritzed analysis describes how long an "average" single operation (from a sequence of operations) takes, where the sequence is chosen "maliciously" to maximize the total time.
 
-Some operations may take more or less time.
+In other words. For a sequence of `k` operations `op`, where the sequence is chosen to maximize the total time, then dividing by `k` gives the amortised time for 1 operation.
 
-For a sequence of k operations op,
-where the sequence is chosen to maximize,
-the sum of T(op_k),
-dividing by k gives the (amortised) average time for 1 operation.
+```
+( T(op_1) + T(op_2) + T(op_3) + ... + T(op_k) ) / k
+```
