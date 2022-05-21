@@ -1,1 +1,0 @@
-Find islandinfection solution at /kattis/itu.islandinfection/
