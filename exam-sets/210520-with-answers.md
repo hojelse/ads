@@ -9,10 +9,18 @@ My answers, correct multiple choice but unknown grading for open questions.
 
 Which pair of functions satisfies $f(N) \sim g(N)$?
 
-- [x] a. $f(N) = N^2 + 2 \log_2(N)$ and $g(N) = N^2$
-- [ ] b. $f(N) = \log_2(N^2)$ and $g(N) = \log_2(N)$
-- [ ] c. $f(N) = \log_2(N^2)$ and $g(N) = (\log_2(N))^2$
-- [ ] d. $f(N) = N^2 + \log_2(N^2)$ and $g(N) = N^2 \log_2(N)$
+- [x] a.
+
+$f(N) = N^2 + 2 \log_2(N)$ and $g(N) = N^2$
+- [ ] b.
+
+$f(N) = \log_2(N^2)$ and $g(N) = \log_2(N)$
+- [ ] c.
+
+$f(N) = \log_2(N^2)$ and $g(N) = (\log_2(N))^2$
+- [ ] d.
+
+$f(N) = N^2 + \log_2(N^2)$ and $g(N) = N^2 \log_2(N)$
 
 ## Question 2
 
@@ -20,10 +28,18 @@ For which pair of functions it is true that $f(N)$ is $O(g(N))$?
 
 Select one:
 
-- [ ] a. $f(N) = \frac{1}{10} N^3$ and $g(N) = 10 N^2 \log(N)$
-- [x] b. $f(N) = 10 N^2 \log N$ and $g(N) = \frac{1}{10} N^3$
-- [ ] c. $f(N) = N^10 \log(N)$ and $g(N) = \frac{1}{10} N^2$
-- [ ] d. $f(N) = 10 N^3 \log(N)$ and $g(N) = \frac{1}{10} N^2$
+- [ ] a.
+
+$f(N) = \frac{1}{10} N^3$ and $g(N) = 10 N^2 \log(N)$
+- [x] b.
+
+$f(N) = 10 N^2 \log N$ and $g(N) = \frac{1}{10} N^3$
+- [ ] c.
+
+$f(N) = N^10 \log(N)$ and $g(N) = \frac{1}{10} N^2$
+- [ ] d.
+
+$f(N) = 10 N^3 \log(N)$ and $g(N) = \frac{1}{10} N^2$
 
 ## Question 3
 
@@ -50,14 +66,30 @@ for (int i = 0; i < N; i += 1) {
 
 Select one:
 
-- [ ] a. $O(N \log N)$
-- [ ] b. $O(N (\log N)^3)$
-- [ ] c. $O(N^3)$
-- [ ] d. $O(\log_3 N)$
-- [ ] e. $O(3 \log_2 N)$
-- [ ] f. $O(N + \frac{1}{3} N)$
-- [x] g. $O(N^2)$
-- [ ] h. $O(N)$
+- [ ] a.
+
+$O(N \log N)$
+- [ ] b.
+
+$O(N (\log N)^3)$
+- [ ] c.
+
+$O(N^3)$
+- [ ] d.
+
+$O(\log_3 N)$
+- [ ] e.
+
+$O(3 \log_2 N)$
+- [ ] f.
+
+$O(N + \frac{1}{3} N)$
+- [x] g.
+
+$O(N^2)$
+- [ ] h.
+
+$O(N)$
 
 ## Question 4
 
@@ -86,14 +118,30 @@ for (int i =0; i < N; i += 1) {
 
 Select one:
 
-- [x] a. $\sim \frac{1}{5} * N$
-- [ ] b. $\sim (\frac{1}{5} + N)$
-- [ ] c. $\sim log_5 N$
-- [ ] d. $\sim (N + log_5 N)$
-- [ ] e. $\sim 5 * N$
-- [ ] f. $\sim N$
-- [ ] g. $\sim 5$
-- [ ] h. $\sim N^5$
+- [x] a.
+
+$\sim \frac{1}{5} * N$
+- [ ] b.
+
+$\sim (\frac{1}{5} + N)$
+- [ ] c.
+
+$\sim log_5 N$
+- [ ] d.
+
+$\sim (N + log_5 N)$
+- [ ] e.
+
+$\sim 5 * N$
+- [ ] f.
+
+$\sim N$
+- [ ] g.
+
+$\sim 5$
+- [ ] h.
+
+$\sim N^5$
 
 ## Question 5
 
@@ -123,14 +171,30 @@ Let $A(n)$ denote the number of *arithmetic operations* (that is, additions and 
 
 Select one:
 
-- [ ] a. $A(n) = A(n-1) + A(n-2)$
-- [ ] b. $A(n) = A(n/2) + 1$
-- [x] c. $A(n) = 3 + A(n-1) + A(n-2)$
-- [ ] d. $A(n) = A(n/2) + (n-1) + (n-2)$
-- [ ] e. $A(n) = A((n-1) + (n-2))$
-- [ ] f. $A(n) = A(n/2) + n$
-- [ ] g. $A(n) \sim \frac{1}{2} (1 + \sqrt(5)) n$
-- [ ] h. $A(n) = A(n-1) + A(n-2) + n$
+- [ ] a.
+
+$A(n) = A(n-1) + A(n-2)$
+- [ ] b.
+
+$A(n) = A(n/2) + 1$
+- [x] c.
+
+$A(n) = 3 + A(n-1) + A(n-2)$
+- [ ] d.
+
+$A(n) = A(n/2) + (n-1) + (n-2)$
+- [ ] e.
+
+$A(n) = A((n-1) + (n-2))$
+- [ ] f.
+
+$A(n) = A(n/2) + n$
+- [ ] g.
+
+$A(n) \sim \frac{1}{2} (1 + \sqrt(5)) n$
+- [ ] h.
+
+$A(n) = A(n-1) + A(n-2) + n$
 
 ## Question 6
 
@@ -183,14 +247,30 @@ What is the running time of `mymethod`?
 
 Select one:
 
-- [ ] a. $O(N)$ in the amortised sense, $O(N^2)$ for a single call
-- [x] b. Constant in the amortised sense, but $O(N)$ for a single call.
-- [ ] c. Constant in the amortised sense, but $O(K)$ for a single call.
-- [ ] d. $O(K)$ in both the amortised sense and for a single call.
-- [ ] e. Constant
-- [ ] f. $O(K)$ in the amortised sense, $O(N)$ for a single call.
-- [ ] g. $O(K)$ in the amortised sense, constant for a single call.
-- [ ] h. $O(N)$ in the amortised sense, $O(K)$ for a single call.
+- [ ] a.
+
+$O(N)$ in the amortised sense, $O(N^2)$ for a single call
+- [x] b.
+
+Constant in the amortised sense, but $O(N)$ for a single call.
+- [ ] c.
+
+Constant in the amortised sense, but $O(K)$ for a single call.
+- [ ] d.
+
+$O(K)$ in both the amortised sense and for a single call.
+- [ ] e.
+
+Constant
+- [ ] f.
+
+$O(K)$ in the amortised sense, $O(N)$ for a single call.
+- [ ] g.
+
+$O(K)$ in the amortised sense, constant for a single call.
+- [ ] h.
+
+$O(N)$ in the amortised sense, $O(K)$ for a single call.
 
 ## Part 2: Mystery class
 
@@ -248,10 +328,18 @@ Which data type is implemented by class `Mystery`?
 
 Select one:
 
-- [ ] a. A (potentially unbalanced) search tree over integers from ${0, ..., N-1}$, under insertions. The depth is bounded by $s$.
-- [x] b. A set, in particular, a subset of ${0, ..., N-1}$, under insertions.
-- [ ] c. A priority queue with keys ${0, ..., N-1}$, under insertions. The `contains` method returns the smallest key in the queue.
-- [ ] d. A stack of values from ${0, ..., N-1}$, under insertions/pushes. The capacity of the stack is fixed to $N$.
+- [ ] a.
+
+A (potentially unbalanced) search tree over integers from ${0, ..., N-1}$, under insertions. The depth is bounded by $s$.
+- [x] b.
+
+A set, in particular, a subset of ${0, ..., N-1}$, under insertions.
+- [ ] c.
+
+A priority queue with keys ${0, ..., N-1}$, under insertions. The `contains` method returns the smallest key in the queue.
+- [ ] d.
+
+A stack of values from ${0, ..., N-1}$, under insertions/pushes. The capacity of the stack is fixed to $N$.
 
 ## Question 8
 
@@ -277,11 +365,21 @@ What is the running time of `add`?
 
 Select one:
 
-- [ ] a. Logarithmic in $N$
-- [ ] b. Logarithmic in $s$
-- [ ] c. Linear in $s$
-- [ ] d. Linear in $N$
-- [x] e. Constant
+- [ ] a.
+
+Logarithmic in $N$
+- [ ] b.
+
+Logarithmic in $s$
+- [ ] c.
+
+Linear in $s$
+- [ ] d.
+
+Linear in $N$
+- [x] e.
+
+Constant
 
 ## Question 10
 
@@ -327,11 +425,21 @@ m.remove(N-1)
 
 What is the *total* running time?
 
-- [ ] a. $O(N \log N)$
-- [ ] b. $O(N \log s)$
-- [ ] c. $O(N^2)$
-- [ ] d. $O(s)$
-- [x] e. $O(N)$
+- [ ] a.
+
+$O(N \log N)$
+- [ ] b.
+
+$O(N \log s)$
+- [ ] c.
+
+$O(N^2)$
+- [ ] d.
+
+$O(s)$
+- [x] e.
+
+$O(N)$
 
 ## Information
 
@@ -389,11 +497,21 @@ Describe what `some` returns.
 
 What is the worst case running time of a single call to `some`? (Give the asymptotically smallest correct answer.)
 
-- [ ] a. $O(N)$
-- [ ] b. $O(N * \log s)$
-- [ ] c. $O(s^2)$
-- [x] d. $O(s)$
-- [ ] e. $O(1)$
+- [ ] a.
+
+$O(N)$
+- [ ] b.
+
+$O(N * \log s)$
+- [ ] c.
+
+$O(s^2)$
+- [x] d.
+
+$O(s)$
+- [ ] e.
+
+$O(1)$
 
 ## Question 15
 
@@ -584,10 +702,20 @@ I want to check if a given sequence $A$ of $N$ strings contains any duplicates, 
 
 What is the **worst (!)** way of doing this?
 
-- [ ] a. Sort the input into a sorted list $S$. Scan from left to right, checking for $S[i] == S[i+1]$.
-- [ ] b. Use two nested loops with indices $i$ and $j$ running from $0$ to $N-1$, and check if $A[i] == A[j]$ for some $i \neq j$.
-- [ ] c. Use a symbol table mapping strings to integers to build a frequency counter. Scan the input from left to right, increasing the counter for $A[i]$ and check if it is $2$.
-- [x] d. Insert the elements into a heap $pq$ and check if $pq[0] == pq[1]$
+Select one:
+
+- [ ] a.
+
+Sort the input into a sorted list $S$. Scan from left to right, checking for $S[i] == S[i+1]$.
+- [ ] b.
+
+Use two nested loops with indices $i$ and $j$ running from $0$ to $N-1$, and check if $A[i] == A[j]$ for some $i \neq j$.
+- [ ] c.
+
+Use a symbol table mapping strings to integers to build a frequency counter. Scan the input from left to right, increasing the counter for $A[i]$ and check if it is $2$.
+- [x] d.
+
+Insert the elements into a heap $pq$ and check if $pq[0] == pq[1]$
 
 ## Crawling Q-Bert
 

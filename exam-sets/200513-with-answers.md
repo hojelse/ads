@@ -9,19 +9,35 @@ My answers, some answers are partial credit. Grade: A.
 Which pair of function satisfies $f(N) \sim g(N)$?
 
 Select one:
-- [x] $f(N) = 2N \log_2 N + \log_2 N$ and $g(N) = 2N \log_2 N$
-- [ ] $f(N) =  N \log_2$             and $g(N) = N + \log_2 N$
-- [ ] $f(N) = 2N \log_2 N$           and $g(N) = 2N + \log_2 N$
-- [ ] $f(N) = 2N \log_2 N$           and $g(N) = 2N + N$
+- [x] a.
+
+$f(N) = 2N \log_2 N + \log_2 N$ and $g(N) = 2N \log_2 N$
+- [ ] b.
+
+$f(N) =  N \log_2$             and $g(N) = N + \log_2 N$
+- [ ] c.
+
+$f(N) = 2N \log_2 N$           and $g(N) = 2N + \log_2 N$
+- [ ] d.
+
+$f(N) = 2N \log_2 N$           and $g(N) = 2N + N$
 
 ## Q2
 For which pair of functions does it hold that $f(N)$ is $O(g(N))$?
 
 Select one:
-- [ ] $f(N) = N^3$ and $g(N) = N^2 \log N$
-- [ ] $f(N) = N^3$ and $g(N) = (\log N)^3$
-- [ ] $f(N) = N^3$ and $g(N) = 3N$
-- [x] $f(N) = 3 N$ and $g(N) = N^3 \log N$
+- [ ] a.
+
+$f(N) = N^3$ and $g(N) = N^2 \log N$
+- [ ] b.
+
+$f(N) = N^3$ and $g(N) = (\log N)^3$
+- [ ] c.
+
+$f(N) = N^3$ and $g(N) = 3N$
+- [x] d.
+
+$f(N) = 3 N$ and $g(N) = N^3 \log N$
 
 ## Q3
 
@@ -45,10 +61,18 @@ for (int i = 0; i < n; i++) {
 ```
 
 Select one:
-- [x] $\sim \frac{3}{2}n$
-- [ ] $\sim n$
-- [ ] $\sim 2n$
-- [ ] $\sim n \log_2 n$
+- [x] a.
+
+$\sim \frac{3}{2}n$
+- [ ] b.
+
+$\sim n$
+- [ ] c.
+
+$\sim 2n$
+- [ ] d.
+
+$\sim n \log_2 n$
 
 ## Q4
 What is the asymptotic running time of the following piece of code?
@@ -80,10 +104,18 @@ while (i < n) {
 ```
 
 Select one:
-- [x] $O(N)$
-- [ ] $O(n \log n)$
-- [ ] $O(n^2)$
-- [ ] $O(\log n)$
+- [x] a.
+
+$O(N)$
+- [ ] b.
+
+$O(n \log n)$
+- [ ] c.
+
+$O(n^2)$
+- [ ] d.
+
+$O(\log n)$
 
 ## Q5
 ```python
@@ -105,10 +137,18 @@ static int c(int N) {
 ```
 
 Select one:
-- [x] $A(N) = A(N-1) + 3$
-- [ ] $A(N) = A(N-1) + 2$
-- [ ] $A(N) = 2 \cdot A(N-1) + 2$
-- [ ] $A(N) = 2 \cdot A(N-1) + 3$
+- [x] a.
+
+$A(N) = A(N-1) + 3$
+- [ ] b.
+
+$A(N) = A(N-1) + 2$
+- [ ] c.
+
+$A(N) = 2 \cdot A(N-1) + 2$
+- [ ] d.
+
+$A(N) = 2 \cdot A(N-1) + 3$
 
 ## Q6
 (hard)
@@ -118,13 +158,27 @@ Recall that $f(n)$ is $O(g(n))$ if there exists $n_0\geq 0$ and $C>0$ such that 
 **Claim**. Let $h$ be a non-decreasing real function and assume that $f$ and $g$ are functions so that $f(n)$ is $O(g(n))$. Then $h(f(n))$ is $O(h(g(n)))$.
 
 Select one:
-- [ ] a. True, as seen from the definition, with $n_0=1$ and $C=1$.
-- [ ] b. False, unless $h$ is continuous.
-- [ ] c. True, as seen from the definition, with $n_0=\min \{\, n\mid f(n)\leq g(n)\,\}$ and $C=f(0)$.
-- [ ] d. Always true, no matter which function $h$ is.
-- [ ] e. True. Consider, for instance, $f(n)= 2\log_2 n$, $g(n)=\log_2 n$, and $h(x) = 2^x$.
-- [ ] f. False. Consider, for instance, $f(n)= 2n$, $g(n)=n$, and $h(x) = 2^x$.
-- [ ] g. The claim makes no sense.
+- [ ] a.
+
+True, as seen from the definition, with $n_0=1$ and $C=1$.
+- [ ] b.
+
+False, unless $h$ is continuous.
+- [ ] c.
+
+True, as seen from the definition, with $n_0=\min \{\, n\mid f(n)\leq g(n)\,\}$ and $C=f(0)$.
+- [ ] d.
+
+Always true, no matter which function $h$ is.
+- [ ] e.
+
+True. Consider, for instance, $f(n)= 2\log_2 n$, $g(n)=\log_2 n$, and $h(x) = 2^x$.
+- [ ] f.
+
+False. Consider, for instance, $f(n)= 2n$, $g(n)=n$, and $h(x) = 2^x$.
+- [ ] g.
+
+The claim makes no sense.
 
 ## Information
 
@@ -271,10 +325,18 @@ What is the running time of `decimate` on a data structure of size $n$?
 Select the smallest correct estimate.
 
 Select one:
-- [ ] a. $O(\log n)$
-- [ ] b. $Constant$
-- [ ] c. $O(n \log n)$
-- [x] d. $O(n)$
+- [ ] a.
+
+$O(\log n)$
+- [ ] b.
+
+$Constant$
+- [ ] c.
+
+$O(n \log n)$
+- [x] d.
+
+$O(n)$
 
 ## Q11
 
