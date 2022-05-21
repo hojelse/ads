@@ -1,6 +1,8 @@
 # Ordinary Exam 2020 with answers
 
-My answers, graded an A.
+13th May 2020
+
+My answers, some answers are partial credit. Grade: A.
 
 ## Q1
 
