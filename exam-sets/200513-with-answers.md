@@ -173,7 +173,7 @@ Always true, no matter which function $h$ is.
 - [ ] e.
 
 True. Consider, for instance, $f(n)= 2\log_2 n$, $g(n)=\log_2 n$, and $h(x) = 2^x$.
-- [ ] f.
+- [x] f.
 
 False. Consider, for instance, $f(n)= 2n$, $g(n)=n$, and $h(x) = 2^x$.
 - [ ] g.
