@@ -32,9 +32,9 @@ static int c(int N) {
 }
 ```
 
-There are 3 arithmetic operations (1 multiplication, 1 subtraction and 1 addition) for one isolated call to the function `c`.
+There are 3 arithmetic operations for one isolated call to the function `c`: 1 multiplication, 1 subtraction and 1 addition.
 
-The function `c` terminates when `N == 0`. The variable `N` is decremented by 1 for each function call. Therefore there will be a total of `N` recursive function calls.
+The function `c` terminates when `N = 0`. The variable `N` is decremented by 1 for each function call. Therefore there will be a total of `N` recursive function calls.
 
 Therefore the sum of arithmetic operations `A(N)` can be expressed as a recurrence relation like so:
 
