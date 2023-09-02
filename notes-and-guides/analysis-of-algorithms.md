@@ -51,7 +51,9 @@ How many stars are printed?
 
 The inner loop is running from `0` to `i` (not `0` to `N`).
 
-For each iteration of the outer loop will print double the amount of stars than the previous iteration.
+For each iteration of the outer loop, the inner loop will run double the amount of times, than the previous iteration.
+
+First iteration of the outer loop results in 1 star, then 2 stars, then 4 stars...
 
 Summing these amounts up is the Geometric sum.
 
