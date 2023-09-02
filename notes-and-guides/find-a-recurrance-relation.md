@@ -47,15 +47,11 @@ A is in and of itself a recursive summing function, summing up arithmetic operat
 Writing out the computations for `A(N) = A(N - 1) + 3` for `N = 5` looks something like this:
 
 ```
-A(5) = A(5 - 1)             + 3
-     = A(4)                 + 3
-     = A(4 - 1)         + 3 + 3
-     = A(3)             + 3 + 3
-     = A(2 - 1)     + 3 + 3 + 3
-     = A(1)         + 3 + 3 + 3
-     = A(1 - 1) + 3 + 3 + 3 + 3
-     = A(0)     + 3 + 3 + 3 + 3
-     = 0        + 3 + 3 + 3 + 3
+A(5) = A(4)               + 3
+     = A(3)           + 3 + 3
+     = A(1)       + 3 + 3 + 3
+     = A(0)   + 3 + 3 + 3 + 3
+     = 0      + 3 + 3 + 3 + 3
      = 12
 
 A(5) = 12
