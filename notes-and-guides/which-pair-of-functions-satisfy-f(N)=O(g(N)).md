@@ -53,16 +53,16 @@ A table of all step taken solving the sample question
 |:-:                  |:-:           |:-:                       |:-:                     |:-:                          |:-:                                                                                                 |
 |`17`                 |`17`          |`~17`                     |`O(1)`                  | constant                    |                                                                                                    |
 |`1`                  |`1`           |`~1`                      |`O(1)`                  | constant                    |                                                                                                    |
-|                     |              |                          |                        |                             |Constant is slower or the same as constant, therefore: `17 = O(1)` is true                          |
+|                     |              |                          |                        |                             |Constant is slower growing or the same as constant, therefore: `17 = O(1)` is true                          |
 |`N^5 + 5*N`          |`N^5`         |`~N^5`                    |`O(N^5)`                | 5th power polynomial        |                                                                                                    |
 |`5 * N^4`            |`5 * N^4`     |`~N^4`                    |`O(N^4)`                | 4th power polynomial        |                                                                                                    |
-|                     |              |                          |                        |                             |5th power polynomial is not slower or the same as 4th, therefore: `N^5 = O(N^4)` is false           |
+|                     |              |                          |                        |                             |5th power polynomial is faster growing than 4th power polynomial, therefore: `N^5 = O(N^4)` is false           |
 |`(log N) * (log N)`  |`(log N)^2`   |`~(log N)^2`              |`O((log N)^k)`          | polylogarithmic             |                                                                                                    |
 |`2 * log N`          |`2 * log N`   |`~2 * log N`              |`O(log N)`              | logarithmic                 |                                                                                                    |
-|                     |              |                          |                        |                             |Polylogarithmic is not slower or the same as logarithmic, therefore: `(log N)^k = O(log N)` is false|
+|                     |              |                          |                        |                             |Polylogarithmic is is faster growing than logarithmic, therefore: `(log N)^k = O(log N)` is false|
 |`(N+1) * (N+1)`      |`(N+1)^2`     |`~N^2`                    |`O(N^2)`                | quadratic                   |                                                                                                    |
 |`N * log N`          |`N * log N`   |`~N * log N`              |`O(N * log N)`          | linearithmic                |                                                                                                    |
-|                     |              |                          |                        |                             |Quadratic is not slower or the same as linearithmic, therefore: `N^2 = O(N log N)` is false         |
+|                     |              |                          |                        |                             |Quadratic is faster growing than linearithmic, therefore: `N^2 = O(N log N)` is false         |
 
 ## Common Order-of-growth functions in order
 
